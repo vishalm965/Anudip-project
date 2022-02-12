@@ -1,0 +1,6 @@
+XElement doc = XElement.Load(Server.MapPath("EmployeeDetails.xml"));
+doc.Add(new XElement("employee",
+new XElement("empid", 6),
+new XElement("empname", "Madhav Sai"),
+new XElement("salary", 80000),
+new XElement("gender", "Male")));
